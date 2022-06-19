@@ -4,12 +4,12 @@
 
 在使用API之前，请先申请appkey，在个人设置页面可以看到，如果没有申请过，请联系OJ的管理员在后台开通。
 
-##API说明
+## API说明
 所有的返回值都是`{"code": <int>, data: <Object>}`的形式，只有code为0的时候代表正常返回了，data为数据内容。其余code表示出现错误，data为错误提示。
 
 所有的POST请求和响应都是json格式的，POST请求的`Content-Type`确保为`application/json`。
 
-##获取题目详细信息
+## 获取题目详细信息
 **request** `GET` `/api/open/problem/?appkey=<string>&problem_id=<int>`
 **response**
 
@@ -75,7 +75,7 @@
 }
 ```
 
-##提交题目
+## 提交题目
 **request** `post` `/api/open/submission/`
 
 ```js
@@ -143,7 +143,7 @@ result的对应关系
 }
 ```
 
-##SSO单点登录
+## SSO单点登录
 **request** `GET` `/account/sso/?callback=<callback_url>`
 
 然后用户确认登录之后，会跳转到`http://callback_url?token=<string>`上，需要获取token参数，然后

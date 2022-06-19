@@ -1,5 +1,8 @@
 # QDU OJ OpenAPI文档
 
+修正内容：
+- 文档中错误的点在`readme.md`中指出
+
 为了方便与Virtual Judge和第三方论坛等进行集成，开放了获取题目详细信息、提交代码、获取代码运行结果和用户SSO单点登录四个API。
 
 文档 https://sxssyzx.github.io/qduoj-OpenAPI/ （有大问题，详见下方）
